@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@font-face {
+  src: url('https://db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2');
+  font-family: digital;
+}
+body {
+  background: #c2c2d6;
+  user-select: none !important;
+  cursor: default !important;
+}
+.wrapper {
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  /* variable  */
+  justify-content: space-evenly;
+}
+.calculator {
+  border: 2px solid #47476b;
+  padding: 5px;
+  background: black;
+  width: 334px;
+  position: relative;
+}
+.formulaScreen {
+  min-height: 20px;
+  font-family: digital;
+  font-size: 20px;
+  color: orange;
+  text-align: right;
+  vertical-align: text-top;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.outputScreen {
+  font-size: 29px;
+  font-family: digital;
+  color: white;
+  text-align: right;
+  line-height: 35px;
+}
+button {
+  position: relative;
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid black !important;
+  border: none;
+  background: #4d4d4d;
+  font-family: Share Tech Mono, monospace;
+  font-size: 20px;
+  cursor: default !important;
+}
+button:hover {
+  color: black;
+  outline: 0.05em solid grey !important;
+  z-index: 3;
+}
+button:focus {
+  /* outline: unset !important; */
+}
+.jumbo {
+  width: 160px;
+}
